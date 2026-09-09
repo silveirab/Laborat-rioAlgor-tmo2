@@ -1,0 +1,20 @@
+
+numero_secreto = 50
+tentativas = 0
+
+numero = int(input("Tente descobrir o número: "))
+
+while numero != numero_secreto:
+    tentativas = tentativas + 1
+
+    if numero < numero_secreto:
+        print("Tente um número maior!")
+    else:
+        print("Tente um número menor!")
+
+    numero = int(input("Tente novamente: "))
+
+tentativas = tentativas + 1
+
+print("Parabéns! Você encontrou a embalagem premiada!")
+print("Tentativas:", tentativas)
