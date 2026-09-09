@@ -1,0 +1,13 @@
+
+empresa1 = 5000
+empresa2 = 8000
+meses = 0
+
+while empresa1 < empresa2:
+    empresa1 = empresa1 * 1.05
+    empresa2 = empresa2 * 1.01
+    meses = meses + 1
+
+print("Meses necessários:", meses)
+print("Produção da primeira empresa:", empresa1)
+print("Produção da segunda empresa:", empresa2)
