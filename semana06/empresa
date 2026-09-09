@@ -1,0 +1,9 @@
+
+pacotes = int(input("Digite a quantidade de pacotes: "))
+caixas = int(input("Digite a quantidade de caixas: "))
+
+resultado = pacotes // caixas
+sobra = pacotes % caixas
+
+print("Cada caixa terá", resultado, "pacotes.")
+print("Vão sobrar", sobra, "pacotes.")
