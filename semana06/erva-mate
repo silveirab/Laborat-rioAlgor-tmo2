@@ -1,0 +1,32 @@
+
+producao = []
+
+for i in range(7):
+    kg = float(input("Digite a quantidade produzida no dia " + str(i + 1) + ": "))
+    producao.append(kg)
+
+total = 0
+
+for i in range(7):
+    total = total + producao[i]
+
+maior = producao[0]
+menor = producao[0]
+
+dia_maior = 1
+dia_menor = 1
+
+for i in range(7):
+    if producao[i] > maior:
+        maior = producao[i]
+        dia_maior = i + 1
+    if producao[i] < menor:
+        menor = producao[i]
+        dia_menor = i + 1
+
+media = total / 7
+
+print("Total produzido:", total, "kg")
+print("Dia de maior produção:", dia_maior)
+print("Dia de menor produção:", dia_menor)
+print("Média diária:", media, "kg")
