@@ -1,0 +1,6 @@
+
+folhas = float(input("Digite a quantidade de folhas colhidas em kg: "))
+
+produto = folhas / 3
+
+print("Quantidade de erva-mate pronta:", produto, "kg")
