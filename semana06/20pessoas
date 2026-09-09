@@ -1,0 +1,30 @@
+
+soma = 0
+maior = 0
+menor = 0
+todos_dias = 0
+
+for i in range(20):
+    vezes = int(input("Quantas vezes por semana você toma chimarrão? "))
+
+    soma = soma + vezes
+
+    if i == 0:
+        maior = vezes
+        menor = vezes
+
+    if vezes > maior:
+        maior = vezes
+
+    if vezes < menor:
+        menor = vezes
+
+    if vezes >= 7:
+        todos_dias = todos_dias + 1
+
+media = soma / 20
+
+print("Média:", media)
+print("Maior quantidade:", maior)
+print("Menor quantidade:", menor)
+print("Pessoas que tomam todos os dias:", todos_dias)
